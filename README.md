@@ -70,24 +70,9 @@ This assignment is implemented in Java.
 
 ![drawing](Link-State-Routing/images/node.png)
 
-Nodes are connected by Links, which are a bidirectional connection between nodes. Messages are sent between nodes on the link connecting them. There are only two types of Messages, either Keep Alive messages or Advertisements.
-
-* <strong><code>Node(int nodeId)</code></strong> is the constructor that creates a Node object. You will want to initialize whatever instance variables you need.
-* <strong><code>int getNodeId()</code></strong> returns the node id of the node. 
-* <strong><code>void plugin(Link link)</code></strong> is called when a link object is plugged into your node.
-* <strong><code>void turnOn()</code></strong> makes the node start be active and start sending keep alives and advertisements
-* <strong><code>void turnOff()</code></strong> makes the node go quiescent.
-* <strong><code>void receiveMessage(Link link, Message message)</code></strong> is called by the Link when a message is sent to the Node.
-* There are two <strong>getNeighbors</strong> methods, one of which gets the directly connected neighbors of the Node, and the other returns the neighbors for a remote node given by the node id. A node can reply with the list of neighbors received from advertisements from the remote node.
-
-Note that the node will have many threads calling it at once, as messages arrive on links from other nodes, as well as being accessed from its own threads. Synchronization is critical in this case to protect shared data structures, but be careful or you might get into deadlock situations if you get circular dependencies. You may either mark a method with the <code>synchronized</code> keyword, or use the <code>synchronized</code> blocks within the body of a function. 
-
-
 ### Architecture of Node
 
 The figure below shows the architecture of Node that you probably want.
-
-
 
 ![drawing](Link-State-Routing/images/architecture.png)
 
@@ -114,9 +99,6 @@ When a Link sends a Message to a Node, it calls the node's `receiveMessage` func
 
 
 ### Utility Classes
-
-To help in your assignment, I have included a class <strong><code>BlockingQueue&lt;T></code></strong> in <strong>BlockingQueue.java</strong>. This class allows you to create a blocking queue such that calling <code>get()</code> on the queue will block until something is inserted into it. Calling <code>put()</code> will wake up any waiting thread.
-
 
 * <strong><code>make test-single </code></strong>- Tests two nodes connected by a single link learning about each other with keep-alives
 * <strong><code>make test-three </code></strong>- Three nodes connected in a Y learning about each other with keep-alives
