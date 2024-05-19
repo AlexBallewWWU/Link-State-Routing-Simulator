@@ -4,7 +4,7 @@
 
 
 
-![alt_text(images/lsr.png)
+![alt_text(Link-State-Routing/images/lsr.png)
 
 
 
