@@ -1,5 +1,11 @@
 # Link-State Routing #
 
+## How to Run ##
+
+To run clone repository open Link-State-Routing and use the folling command to run all tests
+
+<pre> make test </pre>
+
 ## Project Idea ##
 
 This project was given through my Networking class at Western Washington University and through professor See-Mong Tan. The test
