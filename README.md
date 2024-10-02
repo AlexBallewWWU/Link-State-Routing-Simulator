@@ -3,7 +3,7 @@
 ## Project Idea ##
 
 This project was given through my Networking class at Western Washington University and through professor See-Mong Tan. The test
-provided to run the program are written by See-Mong Tan.
+provided to run the program are written by See-Mong Tan and the makefile is also provided by See-Mong Tan.
 
 ## Background ##
 
