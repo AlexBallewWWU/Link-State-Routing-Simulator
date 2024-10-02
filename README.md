@@ -29,6 +29,8 @@ a set timer will delete the router from its list of neighbors.
 
 Finding the shortest path is not implemented, but can easily be by using a shortest path algorithm like dijkstras.
 
+### Visual Representations (provided by See-Mong Tan) 
+
 ![alt_text](Link-State-Routing/images/lsr.png)
 
 ![drawing](Link-State-Routing/images/node.png)
