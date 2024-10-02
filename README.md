@@ -1,5 +1,10 @@
 # Link-State Routing #
 
+## Project Idea ##
+
+This project was given through my Networking class at Western Washington University and through professor See-Mong Tan. The test
+provided to run the program are written by See-Mong Tan.
+
 ## Background ##
 
 Link state routing is typically used on a small scale in intra-domain networks, with examples like small campuses or even individual buildings on campuses. 
